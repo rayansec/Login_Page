@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <header class="link">
+        <nav class="nav">
+            <a class="Home" href="#">Home</a>
+            <a class="About" href="#">About</a>
+            <a class="Service" href="#">Service</a>
+            <a class="Contact" href="#">Contact</a>
+        </nav>
+
+    </header>
+    <div class="pr">
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, unde numquam hic, magni nemo laborum
+            temporibus maiores quisquam asperiores dolorem cupiditate modi.</p>
+    </div>
+
+    <form action="login.php" method="post">
+        <div class="login">
+            <h3>Login</h3>
+        </div>
+
+        <div class="email">
+            <input class="em" type="email" required placeholder="Email..." name="email" autofocus>
+        </div>
+
+        <div class="email">
+            <input class="em" type="password" required placeholder="Password..."
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                name="pass">
+        </div>
+
+        <div class="Remember">
+            <label>
+            <input type="checkbox">Remember me</label>
+             <a href="#">Forget password?</a>
+        </div>
+
+        <div class="Submit">
+            <button class="button">Login</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
